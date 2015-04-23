@@ -5,15 +5,13 @@ var i = 0;
 $(document).ready(function() {
     $("#btnGen").on("click", function(){
         i++
-        $("#gen").append("<div>Line # " + i +"<button id='changeToggle'>Change Color</button> <button id='remove'>Remove</button></div>")
+        $("#gen").append("<div class='change'>Line # " + i +"<button id='changeToggle'>Change Color</button> <button id='remove'>Remove</button></div>")
     });
 
-    $(#"gen").on("click", function(){
-
+    $("#gen").on("click", "#changeToggle", function() {
+       $(this).parent().addClass("green");
     });
     $("#gen").on("click", "#remove", function() {
-        $(this).parent().slideUp("slow", function () {
-        });
-        $(this).remove();
+        $(this).parent().remove();
     });
 });
