@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 
     $("#gen").on("click", "#changeToggle", function() {
-       $(this).parent().addClass("green");
+       $(this).parent().toggleClass("green");
     });
     $("#gen").on("click", "#remove", function() {
         $(this).parent().remove();
