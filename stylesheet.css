@@ -1,4 +1,17 @@
+body {
+    background-color: lightsalmon;
+
+}
+#butters {
+    margin-top: 10em;
+    text-align: center;
+}
+#gen {
+    background-color: lightcyan;
+    text-align: center;
+
+}
 .green{
-    background-color: green;
+    background-color: lightgoldenrodyellow;
 
 }
